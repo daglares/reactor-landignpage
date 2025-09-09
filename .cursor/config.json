@@ -1,0 +1,7 @@
+{
+    "tools": {
+      "edit_file": true,
+      "read_file": true,
+      "search_files": true
+    }
+  }
