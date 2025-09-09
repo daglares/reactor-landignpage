@@ -44,9 +44,9 @@ const Footer = () => {
           {/* Contact & Social */}
           <div>
             <h3 className="text-xl font-bold mb-4">Contacto</h3>
-            <div className="space-y-5 mb-6">
+            <div className="space-y-8 mb-6">
               <p className="text-gray-300 flex items-center">
-                <span className="w-8 h-8 bg-brand-yellow rounded-lg flex items-center justify-center mr-10 p-0 m-0">
+                <span className="w-8 h-8 bg-brand-yellow rounded-lg flex items-center justify-center mr-3 p-0 m-0">
                   <FontAwesomeIcon 
                     icon={faEnvelope} 
                     className="text-brand-blue text-xs p-0 m-0" 
@@ -55,7 +55,7 @@ const Footer = () => {
                 impresionesreactor@hotmail.com
               </p>
               <p className="text-gray-300 flex items-center">
-                <span className="w-8 h-8 bg-brand-magenta rounded-lg flex items-center justify-center mr-10 p-0 m-0">
+                <span className="w-8 h-8 bg-brand-magenta rounded-lg flex items-center justify-center mr-3 p-0 m-0">
                   <FontAwesomeIcon 
                     icon={faPhone} 
                     className="text-white text-xs p-0 m-0" 
@@ -63,8 +63,8 @@ const Footer = () => {
                 </span>
                 +52 (466) 126-4749
               </p>
-              <p className="text-gray-300 flex items-center">
-                <span className="w-8 h-8 bg-brand-blue rounded-lg flex items-center justify-center mr-1 p-0 m-0">
+              <p className="text-gray-300 flex items-center text-start">
+                <span className="w-8 h-8 bg-brand-blue rounded-lg flex items-center justify-center mr-3 p-0 m-0">
                   <FontAwesomeIcon 
                     icon={faMapMarkerAlt} 
                     className="text-white text-xs p-0 m-3" 

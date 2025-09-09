@@ -33,37 +33,37 @@ const Contact = () => {
         <div className="gap-12">
           {/* Contact Information */}
           <div className="space-y-8">
-            <div className="flex flex-col items-center">
-              <h3 className="text-2xl font-bold text-gray-800 mb-6">Información de Contacto</h3>
+            <div className="bg-white rounded-2xl p-8 shadow-lg max-w-md mx-auto">
+              <h3 className="text-2xl font-bold text-gray-800 mb-6 text-center">Información de Contacto</h3>
               <div className="space-y-4">
-                <div className="flex flex-col items-start space-y-6">
+                <div className="flex flex-col items-start space-y-10">
                   <div className="flex items-center space-x-4">
-                    <div className="w-12 h-12 bg-brand-blue rounded-full flex items-center justify-center">
-                      <FontAwesomeIcon icon={faMapMarkerAlt} className="w-6 h-6 text-white" />
+                    <div className="w-12 h-12 bg-brand-blue rounded-lg flex items-center justify-center">
+                      <FontAwesomeIcon icon={faMapMarkerAlt} className="w-6 h-6 m-3 text-white" />
                     </div>
                     <div>
                       <p className="font-semibold text-start text-gray-800">Dirección</p>
-                      <p className="text-white">Miguel Hidalgo 616, Zona Centro, Salvatierra, Guanajuato, México.</p>
+                      <p className="text-gray-600 text-start">Miguel Hidalgo 616, Zona Centro, Salvatierra, Guanajuato, México.</p>
                     </div>
                   </div>
                   
                   <div className="flex items-center space-x-4">
-                    <div className="w-12 h-12 bg-brand-magenta rounded-full flex items-center justify-center">
+                    <div className="w-12 h-12 bg-brand-magenta rounded-lg flex items-center justify-center">
                       <FontAwesomeIcon icon={faPhone} className="w-6 h-6 text-white" />
                     </div>
                     <div>
                       <p className="font-semibold text-start text-gray-800">Teléfono</p>
-                      <p className="text-white">+52 (466) 126-4749</p>
+                      <p className="text-gray-600">+52 (466) 126-4749</p>
                     </div>
                   </div>
                   
                   <div className="flex items-center space-x-4">
-                    <div className="w-12 h-12 bg-brand-yellow rounded-full flex items-center justify-center">
+                    <div className="w-12 h-12 bg-brand-yellow rounded-lg flex items-center justify-center">
                       <FontAwesomeIcon icon={faEnvelope} className="w-6 h-6 text-brand-blue" />
                     </div>
                     <div>
                       <p className="font-semibold text-start text-gray-800">Email</p>
-                      <p className="text-white">impresionesreactor@hotmail.com</p>
+                      <p className="text-gray-600">impresionesreactor@hotmail.com</p>
                     </div>
                   </div>
                 </div>
@@ -88,8 +88,8 @@ const Contact = () => {
         </div>
         
         {/* Google Maps Embed */}
-        <div className="mt-16">
-          <div className="rounded-2xl overflow-hidden shadow-2xl">
+        <div className="mt-8">
+          <div className="rounded-2xl overflow-hidden shadow-2xl max-w-md mx-auto">
             <iframe
               src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d936.0182210727916!2d-100.88305033045434!3d20.214292157329663!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x842cc49b103d0035%3A0x5ade1f7984451bd7!2sImpresiones%20Reactor!5e0!3m2!1ses-419!2smx!4v1757435137499!5m2!1ses-419!2smx"
               width="100%"
