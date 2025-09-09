@@ -51,11 +51,11 @@ const Gallery = () => {
         <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
           {galleryItems.map((item) => (
             <div key={item.id} className="bg-white rounded-2xl shadow-lg overflow-hidden hover:shadow-xl transition-shadow">
-              <div className="relative h-64 overflow-hidden">
+              <div className="relative mt-8 h-64 overflow-hidden">
                 <img 
                   src={item.image} 
                   alt={item.title}
-                  className="w-full h-full object-contain hover:scale-105 transition-transform duration-300 bg-gray-100"
+                  className="w-full h-full object-contain hover:scale-105 transition-transform duration-300 "
                 />
                 <div className="absolute top-4 right-4 bg-brand-magenta text-white px-3 py-1 rounded-full text-sm font-semibold">
                   {item.category}

@@ -57,7 +57,7 @@ const ProductCarousel = () => {
                   <div className="bg-white p-12 text-center h-[500px] flex flex-col justify-between">
                     <div className="flex-1 flex flex-col justify-center">
                       {product.image.startsWith('/images/') ? (
-                        <div className="mb-6 flex items-center justify-center h-48 bg-gray-100">
+                        <div className="mb-6 flex items-center justify-center h-48">
                           <img 
                             src={product.image} 
                             alt={product.title}
