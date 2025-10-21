@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 
 const ProductCarousel = () => {
   const [currentSlide, setCurrentSlide] = useState(0);
@@ -37,6 +37,16 @@ const ProductCarousel = () => {
   const prevSlide = () => {
     setCurrentSlide((prev) => (prev - 1 + products.length) % products.length);
   };
+
+  // Timer automático para cambiar slides
+  useEffect(() => {
+    const timer = setInterval(() => {
+      setCurrentSlide((prev) => (prev + 1) % products.length);
+    }, 3000); // Cambia cada 5 segundos
+
+    // Limpiar el timer cuando el componente se desmonte
+    return () => clearInterval(timer);
+  }, [products.length]);
 
   return (
     <section id="products" className="py-20">

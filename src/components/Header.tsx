@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import { Link } from "react-router-dom";
 
 const Header = () => {
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
@@ -46,7 +47,7 @@ const Header = () => {
           <div className="flex flex-1 items-center justify-center sm:items-stretch sm:justify-start">
             <div className="flex shrink-0 items-center">
               {/* Logo */}
-              <div className="flex items-end space-x-3">
+              <Link to="/" className="flex items-end space-x-3 hover:opacity-80 transition-opacity">
                 <div className="w-8 h-8 rounded-full overflow-hidden">
                   <img 
                     src="/images/logoreactor.png" 
@@ -55,38 +56,44 @@ const Header = () => {
                   />
                 </div>
                 <span className="text-xl font-bold text-white">Impresiones Reactor</span>
-              </div>
+              </Link>
             </div>
             
             <div className="hidden sm:flex sm:ml-auto">
               <div className="flex space-x-4">
-                <a 
-                  href="#home" 
-                  className="rounded-md px-3 py-2 text-sm font-medium text-brand-yellow hover:bg-white/5 hover:text-brand-blue transition-colors"
+                <Link 
+                  to="/" 
+                  className="rounded-xl bg-white px-3 py-2 text-sm font-medium text-brand-magenta hover:bg-brand-yellow hover:text-brand-blue transition-colors"
                 >
                   Inicio
-                </a>
+                </Link>
+                <Link 
+                  to="/catalog" 
+                  className="rounded-xl bg-white px-3 py-2 text-sm font-medium text-brand-magenta hover:bg-brand-yellow hover:text-brand-blue transition-colors"
+                >
+                  Catálogo
+                </Link>
                 <a 
-                  href="#products" 
-                  className="rounded-md px-3 py-2 text-sm font-medium text-brand-yellow hover:bg-white/5 hover:text-brand-blue transition-colors"
+                  href="/#products" 
+                  className="rounded-xl bg-white px-3 py-2 text-sm font-medium text-brand-magenta hover:bg-brand-yellow hover:text-brand-blue transition-colors"
                 >
                   Productos
                 </a>
                 <a 
-                  href="#services" 
-                  className="rounded-md px-3 py-2 text-sm font-medium text-brand-yellow hover:bg-white/5 hover:text-brand-blue transition-colors"
+                  href="/#services" 
+                  className="rounded-xl bg-white px-3 py-2 text-sm font-medium text-brand-magenta hover:bg-brand-yellow hover:text-brand-blue transition-colors"
                 >
                   Servicios
                 </a>
                 <a 
-                  href="#about" 
-                  className="rounded-md px-3 py-2 text-sm font-medium text-brand-yellow hover:bg-white/5 hover:text-brand-blue transition-colors"
+                  href="/#about" 
+                  className="rounded-xl bg-white px-3 py-2 text-sm font-medium text-brand-magenta hover:bg-brand-yellow hover:text-brand-blue transition-colors"
                 >
                   Nosotros
                 </a>
                 <a 
-                  href="#contact" 
-                  className="rounded-md px-3 py-2 text-sm font-medium text-brand-yellow hover:bg-white/5 hover:text-brand-blue transition-colors"
+                  href="/#contact" 
+                  className="rounded-xl bg-white px-3 py-2 text-sm font-medium text-brand-magenta hover:bg-brand-yellow hover:text-brand-blue transition-colors"
                 >
                   Contacto
                 </a>
@@ -119,36 +126,43 @@ const Header = () => {
       {isMobileMenuOpen && (
         <div className="block bg-brand-magenta sm:hidden">
           <div className="space-y-1 px-2 pt-2 pb-3">
-            <a 
-              href="#home" 
+            <Link 
+              to="/" 
               className="block rounded-md px-3 py-2 text-base font-medium text-brand-yellow hover:bg-white/5 hover:text-white transition-colors"
               onClick={() => setIsMobileMenuOpen(false)}
             >
               Inicio
-            </a>
+            </Link>
+            <Link 
+              to="/catalog" 
+              className="block rounded-md px-3 py-2 text-base font-medium text-brand-yellow hover:bg-white/5 hover:text-white transition-colors"
+              onClick={() => setIsMobileMenuOpen(false)}
+            >
+              Catálogo
+            </Link>
             <a 
-              href="#products" 
+              href="/#products" 
               className="block rounded-md px-3 py-2 text-base font-medium text-brand-yellow hover:bg-white/5 hover:text-white transition-colors"
               onClick={() => setIsMobileMenuOpen(false)}
             >
               Productos
             </a>
             <a 
-              href="#services" 
+              href="/#services" 
               className="block rounded-md px-3 py-2 text-base font-medium text-brand-yellow hover:bg-white/5 hover:text-white transition-colors"
               onClick={() => setIsMobileMenuOpen(false)}
             >
               Servicios
             </a>
             <a 
-              href="#about" 
+              href="/#about" 
               className="block rounded-md px-3 py-2 text-base font-medium text-brand-yellow hover:bg-white/5 hover:text-white transition-colors"
               onClick={() => setIsMobileMenuOpen(false)}
             >
               Nosotros
             </a>
             <a 
-              href="#contact" 
+              href="/#contact" 
               className="block rounded-md px-3 py-2 text-base font-medium text-brand-yellow hover:bg-white/5 hover:text-white transition-colors"
               onClick={() => setIsMobileMenuOpen(false)}
             >

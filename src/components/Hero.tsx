@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 
 const Hero = () => {
   return (
@@ -15,14 +16,12 @@ const Hero = () => {
               Impresión, Soporte Técnico, Souvenirs, Regalos y mucho más. 
             </p>
             <div className="flex flex-col sm:flex-row gap-4">
-              <a
-                href="https://wa.me/524661264749?text=Hola%2C%20me%20gustar%C3%ADa%20hacer%20una%20cotizaci%C3%B3n."
-                target="_blank"
-                rel="noopener noreferrer"
+              <Link
+                to="/catalog"
                 className="bg-brand-yellow text-brand-blue px-8 py-4 rounded-lg font-semibold text-lg hover:bg-yellow-400 transition-colors flex items-center justify-center"
               >
-                Solicitar Cotización
-              </a>
+                Ver Catálogo
+              </Link>
               <a
                 href="https://wa.me/524661264749?text=Hola%20Impresiones%20Reactor%2C%20estoy%20interesad%40%20en%20sus%20servicios."
                 target="_blank"
