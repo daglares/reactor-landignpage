@@ -22,7 +22,7 @@ const AboutUs = () => {
             </p>
             <div className="flex flex-wrap gap-4 mt-8">
               <div className="bg-brand-blue border-2 border-white text-white px-6 py-3 rounded-lg">
-                <span className="font-semibold">10+ Años</span>
+                <span className="font-semibold">15+ Años</span>
                 <p className="text-sm">de experiencia</p>
               </div>
               <div className="bg-brand-magenta border-2 border-white text-white px-6 py-3 rounded-lg">
