@@ -46,7 +46,7 @@ const Gallery = () => {
     },
     { 
       id: 8, 
-      title: "Productos Reactor", 
+      title: "Llaveros en MDF", 
       category: "Promocionales",
       image: "/images/pngs reactor copia.jpg"
     },
@@ -89,7 +89,7 @@ const Gallery = () => {
     { 
       id: 15, 
       title: "Viniles para Vehículos", 
-      category: "Automotriz",
+      category: "Personalización",
       image: "/images/viniles.jpg"
     },
     { 
@@ -121,7 +121,7 @@ const Gallery = () => {
                 <img 
                   src={item.image} 
                   alt={item.title}
-                  className="w-full h-full object-contain hover:scale-105 transition-transform duration-300 "
+                  className="w-full h-full object-contain hover:scale-105 transition-transform duration-300"
                 />
                 <div className="absolute top-4 right-4 bg-brand-magenta text-white px-3 py-1 rounded-full text-sm font-semibold">
                   {item.category}

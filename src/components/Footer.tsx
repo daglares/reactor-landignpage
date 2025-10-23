@@ -34,6 +34,7 @@ const Footer = () => {
             <h3 className="text-xl font-bold mb-4">Enlaces Rápidos</h3>
             <ul className="space-y-2">
               <li><a href="#home" className="text-gray-300 hover:text-brand-yellow transition-colors">Inicio</a></li>
+              <li><a href="/catalog" className="text-gray-300 hover:text-brand-yellow transition-colors">Catálogo</a></li>
               <li><a href="#products" className="text-gray-300 hover:text-brand-yellow transition-colors">Productos</a></li>
               <li><a href="#services" className="text-gray-300 hover:text-brand-yellow transition-colors">Servicios</a></li>
               <li><a href="#about" className="text-gray-300 hover:text-brand-yellow transition-colors">Nosotros</a></li>
@@ -75,15 +76,15 @@ const Footer = () => {
             </div>
             
             <div className="flex space-x-4">
-              <a href="https://facebook.com" className="w-10 h-10 bg-brand-blue rounded-full flex items-center justify-center hover:bg-blue-600 transition-colors">
+              <a href="https://www.facebook.com/profile.php?id=100015779281738" target="_blank" rel="noopener noreferrer" className="w-10 h-10 bg-brand-blue rounded-full flex items-center justify-center hover:bg-blue-600 transition-colors">
                 <FontAwesomeIcon icon={faFacebook} className="w-5 h-5" />
               </a>
-              <a href="https://instagram.com" className="w-10 h-10 bg-brand-magenta rounded-full flex items-center justify-center hover:bg-pink-600 transition-colors">
+              {/*<a href="https://instagram.com" className="w-10 h-10 bg-brand-magenta rounded-full flex items-center justify-center hover:bg-pink-600 transition-colors">
                 <FontAwesomeIcon icon={faInstagram} className="w-5 h-5" />
               </a>
               <a href="https://tiktok.com" className="w-10 h-10 bg-brand-yellow rounded-full flex items-center justify-center hover:bg-yellow-400 transition-colors">
                 <FontAwesomeIcon icon={faTiktok} className="w-5 h-5 text-brand-blue" />
-              </a>
+              </a>*/}
             </div>
           </div>
         </div>

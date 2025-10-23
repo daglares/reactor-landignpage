@@ -9,15 +9,15 @@ const AboutUs = () => {
           <div className="space-y-6">
             <h2 className="text-4xl font-bold text-gray-800 mb-6">Sobre Nosotros</h2>
             <p className="text-lg text-white leading-relaxed">
-              Con más de 10 años de experiencia en el sector de impresión digital, 
+              Con más de 15 años de experiencia en el sector de impresión digital, 
               Impresiones Reactor se ha consolidado como líder en soluciones gráficas 
-              y servicios de importación. Nuestro compromiso es brindar calidad 
+              y servicio técnico profesional. Nuestro compromiso es brindar calidad 
               excepcional y atención personalizada a cada cliente.
             </p>
             <p className="text-lg text-white leading-relaxed">
               Utilizamos tecnología de vanguardia y materiales de primera calidad 
               para garantizar que cada proyecto supere las expectativas. Desde 
-              pequeñas empresas hasta corporaciones, confían en nosotros para 
+              pequeñas empresas hasta grandes corporaciones, confían en nosotros para 
               sus necesidades de impresión.
             </p>
             <div className="flex flex-wrap gap-4 mt-8">
@@ -38,11 +38,11 @@ const AboutUs = () => {
           
           {/* Workshop Image */}
           <div className="relative">
-            <div className="bg-gradient-to-br from-brand-blue to-brand-magenta rounded-2xl p-4 text-center">
+            <div className="">
               <img 
-                src="/images/taller2.jpg" 
-                alt="Equipo de Reactor Print trabajando en el taller con banner impreso" 
-                className="w-full h-auto rounded-xl shadow-2xl"
+                src="/images/logoreactor.png" 
+                alt="Logo de Reactor" 
+                className="w-5/6 h-auto rounded-full shadow-2xl mx-auto"
               />
             </div>
           </div>

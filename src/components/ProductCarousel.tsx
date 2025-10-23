@@ -1,59 +1,58 @@
 import React, { useState, useEffect } from "react";
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faPrint, faLaptop, faPalette } from '@fortawesome/free-solid-svg-icons';
 
 const ProductCarousel = () => {
   const [currentSlide, setCurrentSlide] = useState(0);
   
-  const products = [
+  const services = [
     {
       id: 1,
-      title: "Tarjetas de Presentación",
-      description: "Profesionales en diferentes materiales y acabados",
-      image: "/images/tarjetasdepresentacion.jpg"
+      title: "Impresión Digital",
+      description: "Impresión de alta calidad en diferentes materiales y formatos, desde tarjetas hasta banners gigantes.",
+      icon: faPrint,
+      color: "from-brand-blue to-blue-600"
     },
     {
       id: 2,
-      title: "Volantes y Flyers",
-      description: "Material promocional para eventos y campañas",
-      image: "/images/stand.jpg"
+      title: "Servicio Técnico Profesional",
+      description: "Ofrecemos servicio técnico profesional para garantizar la confianza de nuestros clientes.",
+      icon: faLaptop,
+      color: "from-brand-magenta to-pink-600"
     },
     {
       id: 3,
-      title: "Banners y Vinilos",
-      description: "Señalización y publicidad de gran formato",
-      image: "/images/banner.jpg"
-    },
-    {
-      id: 4,
-      title: "Etiquetas Personalizadas",
-      description: "Adhesivas para productos y empaques",
-      image: "/images/stickers.jpg"
+      title: "Diseño y Personalización",
+      description: "Servicios de diseño gráfico y personalización completa para que tu proyecto sea único.",
+      icon: faPalette,
+      color: "from-brand-yellow to-yellow-500"
     }
   ];
 
   const nextSlide = () => {
-    setCurrentSlide((prev) => (prev + 1) % products.length);
+    setCurrentSlide((prev) => (prev + 1) % services.length);
   };
 
   const prevSlide = () => {
-    setCurrentSlide((prev) => (prev - 1 + products.length) % products.length);
+    setCurrentSlide((prev) => (prev - 1 + services.length) % services.length);
   };
 
   // Timer automático para cambiar slides
   useEffect(() => {
     const timer = setInterval(() => {
-      setCurrentSlide((prev) => (prev + 1) % products.length);
-    }, 3000); // Cambia cada 5 segundos
+      setCurrentSlide((prev) => (prev + 1) % services.length);
+    }, 3000); // Cambia cada 3 segundos
 
     // Limpiar el timer cuando el componente se desmonte
     return () => clearInterval(timer);
-  }, [products.length]);
+  }, [services.length]);
 
   return (
     <section id="products" className="py-20">
       <div className="container mx-auto px-4">
         <div className="text-center mb-16">
-          <h2 className="text-4xl font-bold text-gray-800 mb-4">Nuestros Productos</h2>
-          <p className="text-xl text-white">Soluciones de impresión para todas tus necesidades</p>
+          <h2 className="text-4xl font-bold text-gray-800 mb-4">Nuestros Servicios</h2>
+          <p className="text-xl text-white">Soluciones completas para todas tus necesidades</p>
         </div>
         
         <div className="relative max-w-4xl mx-auto">
@@ -62,25 +61,19 @@ const ProductCarousel = () => {
               className="flex transition-transform duration-500 ease-in-out"
               style={{ transform: `translateX(-${currentSlide * 100}%)` }}
             >
-              {products.map((product) => (
-                <div key={product.id} className="w-full flex-shrink-0">
-                  <div className="bg-white p-12 text-center h-[500px] flex flex-col justify-between">
+              {services.map((service) => (
+                <div key={service.id} className="w-full flex-shrink-0">
+                  <div className="bg-white p-12 text-center h-[450px] flex flex-col justify-center">
                     <div className="flex-1 flex flex-col justify-center">
-                      {product.image.startsWith('/images/') ? (
-                        <div className="mb-6 flex items-center justify-center h-48">
-                          <img 
-                            src={product.image} 
-                            alt={product.title}
-                            className="max-h-full max-w-full object-contain rounded-lg shadow-lg"
-                          />
+                      <div className="mb-8 flex items-center justify-center">
+                        <div className={`w-24 h-24 mx-auto bg-gradient-to-r ${service.color} rounded-full flex items-center justify-center shadow-lg`}>
+                          <FontAwesomeIcon icon={service.icon} className="text-white text-4xl" />
                         </div>
-                      ) : (
-                        <div className="text-6xl mb-6">{product.image}</div>
-                      )}
+                      </div>
                     </div>
                     <div className="flex-1 flex flex-col justify-center">
-                      <h3 className="text-2xl font-bold text-gray-800 mb-4 line-clamp-2">{product.title}</h3>
-                      <p className="text-base text-gray-600 line-clamp-3">{product.description}</p>
+                      <h3 className="text-3xl font-bold text-gray-800 mb-6">{service.title}</h3>
+                      <p className="text-lg text-gray-600 leading-relaxed max-w-2xl mx-auto">{service.description}</p>
                     </div>
                   </div>
                 </div>
@@ -110,7 +103,7 @@ const ProductCarousel = () => {
         
         {/* Dots indicator - Works on both mobile and desktop */}
         <div className="flex justify-center mt-8 space-x-2">
-          {products.map((_, index) => (
+          {services.map((_, index) => (
             <button
               key={index}
               onClick={() => setCurrentSlide(index)}

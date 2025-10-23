@@ -15,10 +15,10 @@ const Hero = () => {
             <p className="text-xl text-gray-100">
               Impresión, Soporte Técnico, Souvenirs, Regalos y mucho más. 
             </p>
-            <div className="flex flex-col sm:flex-row gap-4">
+            <div className="flex flex-row gap-4">
               <Link
                 to="/catalog"
-                className="bg-brand-yellow text-brand-blue px-8 py-4 rounded-lg font-semibold text-lg hover:bg-yellow-400 transition-colors flex items-center justify-center"
+                className="bg-brand-yellow text-brand-blue px-6 py-4 md:px-8 md:py-4 rounded-lg font-semibold text-lg hover:bg-yellow-400 transition-colors flex items-center justify-center"
               >
                 Ver Catálogo
               </Link>
@@ -26,7 +26,7 @@ const Hero = () => {
                 href="https://wa.me/524661264749?text=Hola%20Impresiones%20Reactor%2C%20estoy%20interesad%40%20en%20sus%20servicios."
                 target="_blank"
                 rel="noopener noreferrer"
-                className="border-2 border-white text-white px-8 py-4 rounded-lg font-semibold text-lg hover:bg-white hover:text-brand-blue transition-colors flex items-center justify-center"
+                className="border-2 border-white text-white px-6 py-4 md:px-8 md:py-4 rounded-lg font-semibold text-lg hover:bg-white hover:text-brand-blue transition-colors flex items-center justify-center"
               >
                 <svg
                   className="w-5 h-5 mr-2"
