@@ -10,7 +10,7 @@ const Footer = () => {
         <div className="grid md:grid-cols-3 gap-8 mb-8">
           {/* Company Info */}
           <div>
-            <div className="flex items-center space-x-3 mb-4">
+            <div className="flex items-center space-x-3 mb-4 justify-center">
               <div className="w-10 h-10 rounded-full overflow-hidden">
                 <img 
                   src="/images/logoreactor.png" 
@@ -21,7 +21,7 @@ const Footer = () => {
               <span className="text-xl font-bold">Impresiones Reactor</span>
             </div>
             <p className="text-gray-300 mb-4">
-              Tu socio confiable en impresión digital y servicios de importación. 
+              Tu socio confiable en impresión digital y servicio técnico. 
               Calidad, rapidez y atención personalizada.
             </p>
             <p className="text-brand-yellow font-semibold text-lg">
@@ -62,6 +62,8 @@ const Footer = () => {
                     className="text-white text-xs p-0 m-0" 
                   />
                 </span>
+                +52 (55) 3617-5592
+                <br />
                 +52 (466) 126-4749
               </p>
               <p className="text-gray-300 flex items-center text-start">
@@ -75,7 +77,7 @@ const Footer = () => {
               </p>
             </div>
             
-            <div className="flex space-x-4">
+            <div className="flex space-x-4 justify-center">
               <a href="https://www.facebook.com/profile.php?id=100015779281738" target="_blank" rel="noopener noreferrer" className="w-10 h-10 bg-brand-blue rounded-full flex items-center justify-center hover:bg-blue-600 transition-colors">
                 <FontAwesomeIcon icon={faFacebook} className="w-5 h-5" />
               </a>
