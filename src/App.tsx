@@ -1,5 +1,6 @@
 import React from "react";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+import { Analytics } from "@vercel/analytics/react";
 import "./App.css";
 import Header from "./components/Header";
 import Footer from "./components/Footer";
@@ -16,6 +17,7 @@ function App() {
           <Route path="/catalog" element={<Catalog />} />
         </Routes>
         <Footer />
+        <Analytics />
       </div>
     </Router>
   );
